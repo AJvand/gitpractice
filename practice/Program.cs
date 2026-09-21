@@ -1,4 +1,6 @@
-﻿namespace studio_test
+﻿using System;
+
+namespace studio_test
 {
     internal class Program
     {
@@ -6,57 +8,107 @@
         {
             // Niko's Lab
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // AJ's Lab
             {
-                Random rand = new Random();
+
+                {
+                    Random random = new Random();
+                    int ones = 0;
+                    int twos = 0;
+                    int threes = 0;
+                    int fours = 0;
+                    int fives = 0;
+                    int sixes = 0;
+
+                    for (int i = 0; i < 6000; i++)
+                    {
+                        int roll = random.Next(1, 7);
+
+                        if (roll == 1)
+                            ones++;
+                        else if (roll == 2)
+                            twos++;
+                        else if (roll == 3)
+                            threes++;
+                        else if (roll == 4)
+                            fours++;
+                        else if (roll == 5)
+                            fives++;
+                        else if (roll == 6)
+                            sixes++;
+                    }
+
+                    Console.WriteLine("Number     Times Rolled");
+                    Console.WriteLine("-----------------------");
+                    Console.WriteLine("1         " + ones);
+                    Console.WriteLine("2         " + twos);
+                    Console.WriteLine("3         " + threes);
+                    Console.WriteLine("4         " + fours);
+                    Console.WriteLine("5         " + fives);
+                    Console.WriteLine("6         " + sixes);
+
+                    Console.ReadLine();
+                    {
+
+
+                    }
+                }
+            }
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// AJ's Lab
+{
+    Random rand = new Random();
                 double guessTarget = 0;
                 double userGuess = -1;
                 double attempts = 0;
